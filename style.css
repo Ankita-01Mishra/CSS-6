@@ -1,8 +1,13 @@
 body{
     background: url(./assets/shara\ desert.jpg);
-    /* background-repeat: no-repeat; */
-    /* background-size: 100vw 100vh; */
-    background-size:auto;
+    background-repeat: no-repeat;
+    
+    background-size: 100% 100%;
+    /* background-size:auto; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 }
 .first-container img{
@@ -15,12 +20,12 @@ body{
     /* border: 2px solid red; */
     height: 70px;
 }
-span{
+.first-container span{
     float: right;
 }
 .home,.region,.about,.fa-bars{
     /* float: right; */
-    margin: 16px 16px;
+    margin: 16px 19px;
     color: white;
     font-size: 17px;
     text-decoration: none;
@@ -30,6 +35,7 @@ span{
     border: 2px solid rgb(124, 118, 118);
     border-radius: 50%;
     padding: 6px;
+    margin-right: 113px;
     /* margin-top: 10px; */
     /* margin-right: 107px; */
 }
@@ -52,6 +58,7 @@ span{
   }
   .item{
     margin: 10px;
+    color: white;
   }
   #item1{
     /* border: 2px solid red; */
@@ -67,10 +74,13 @@ span{
   }
   #item_2{
     /* border: 2px solid red; */
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     margin-left: 70px;
    
+  }
+  .flex1,.flex2{
+    display: flex;
   }
   #item2{
     /* border: 2px solid red; */
@@ -79,6 +89,15 @@ span{
     height: 250px;
     margin: 0px 30px 30px 30px;
     background: url(./assets/pic-1.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 18px;
+    padding-top: 13px;
+  }
+  #item2,#item3,#item4,#item5 p{
+    font-size: 13px;
   }
   #item3{
     /* border: 2px solid red; */
@@ -86,7 +105,13 @@ span{
     width:250px;
     height: 250px;
     margin-left: 30px;
-    background: url(./assets/pic-3.png);
+    background: url(./assets/pic-2.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 18px;
+    padding-top: 13px;
   }
   #item4{
     /* border: 2px solid red; */
@@ -94,7 +119,14 @@ span{
     width:250px;
     height: 250px;
     margin: 0px 30px 30px 30px;
-    background: url(./assets/pic-2.png);
+    background: url(./assets/pic-3.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 18px;
+    padding-top: 13px;
+
   }
   #item5{
     /* border: 2px solid red; */
@@ -103,12 +135,21 @@ span{
     height: 250px;
     background: url(./assets/pic-4.png);
     margin-left: 30px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 18px;
+    padding-top: 13px;
   }
   .btn{
-    height: 50px;
+    height: 45px;
     width: 200px;
     border: white;
     border-radius: 20px;
+   font-size: 17px;
+   font-family: serif;
+   font-weight: bold;
 
   }
   @media screen and (max-width: 900px) {
@@ -129,16 +170,19 @@ span{
     #item2, #item3, #item4, #item5{
         width: 450px;
     }
+    .flex1,.flex2{
+      flex-direction: column;
+    }
 
   }
   @media screen and (max-width: 700px){
     .home,.region,.about{
-      margin: 0 30px;
+      margin: 0 20px;
       font-size: 23px;
     }
 
   }
-  @media screen and (max-width: 692px) and (min-width: 300px){
+  @media screen and (max-width: 700px) and (min-width: 600px){
       .home,.region,.about{
         float: none;
         display: block;
@@ -147,8 +191,157 @@ span{
       .fa-bars{
         position: absolute;
         top: 4px;
-        right: -23px;
-    
+        right: -128px;
       }
+        .home{
+          position: absolute;
+          top: 2px;
+          right: -68px;
+        }
+      
+        .region{
+          position: absolute;
+          top: 26px;
+          right: -68px;
+        }
+      
+        .about{
+          position: absolute;
+          top: 50px;
+          right: -68px;
+        }
+      
   }
+
+
+  @media screen and (max-width: 600px) and (min-width: 500px){
+      .home,.region,.about{
+        float: none;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .fa-bars{
+        position: absolute;
+        top: 4px;
+        right: -211px;
+      }
+        .home{
+          position: absolute;
+          top: 2px;
+          right: -148px;
+        }
+      
+        .region{
+          position: absolute;
+          top: 26px;
+          right: -148px;
+        }
+      
+        .about{
+          position: absolute;
+          top: 50px;
+          right: -148px;
+        }
+      
+  }
+
+
+  @media screen and (max-width: 500px) and (min-width: 400px){
+      .home,.region,.about{
+        float: none;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .fa-bars{
+        position: absolute;
+        top: 4px;
+        right: -285px;
+      }
+        .home{
+          position: absolute;
+          top: 2px;
+          right: -223px;
+        }
+      
+        .region{
+          position: absolute;
+          top: 26px;
+          right: -223px;
+        }
+      
+        .about{
+          position: absolute;
+          top: 50px;
+          right: -223px;
+        }
+      
+  }
+
+
+  @media screen and (max-width: 400px) and (min-width: 300px){
+      .home,.region,.about{
+        float: none;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .fa-bars{
+        position: absolute;
+        top: 4px;
+        right: -400px;
+      }
+        .home{
+          position: absolute;
+          top: 2px;
+          right: -308px;
+        }
+      
+        .region{
+          position: absolute;
+          top: 26px;
+          right: -308px;
+        }
+      
+        .about{
+          position: absolute;
+          top: 50px;
+          right: -308px;
+        }
+      
+  }
+
+
+  @media screen and (max-width: 300px) and (min-width: 220px){
+      .home,.region,.about{
+        float: none;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .fa-bars{
+        position: absolute;
+        top: 4px;
+        right: -475px;
+      }
+        .home{
+          position: absolute;
+          top: 2px;
+          right: -403px;
+        }
+      
+        .region{
+          position: absolute;
+          top: 26px;
+          right: -403px;
+        }
+      
+        .about{
+          position: absolute;
+          top: 50px;
+          right: -403px;
+        }
+      
+  }
+
+ #item2:hover,#item3:hover,#item4:hover,#item5:hover{
+  transform:translateY(-10px) ;
+ }
  
