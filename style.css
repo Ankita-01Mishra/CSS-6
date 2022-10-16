@@ -2,8 +2,8 @@ body{
     background: url(./assets/shara\ desert.jpg);
     background-repeat: no-repeat;
     
-    background-size: 100% 100%;
-    /* background-size:auto; */
+    /* background-size: 100vh 100vw; */
+    background-size:auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -191,7 +191,7 @@ body{
       .fa-bars{
         position: absolute;
         top: 4px;
-        right: -128px;
+        right: -210px;
       }
         .home{
           position: absolute;
@@ -223,7 +223,7 @@ body{
       .fa-bars{
         position: absolute;
         top: 4px;
-        right: -211px;
+        right: -287px;
       }
         .home{
           position: absolute;
@@ -255,7 +255,7 @@ body{
       .fa-bars{
         position: absolute;
         top: 4px;
-        right: -285px;
+        right: -358px;
       }
         .home{
           position: absolute;
@@ -287,7 +287,7 @@ body{
       .fa-bars{
         position: absolute;
         top: 4px;
-        right: -400px;
+        right: -440px;
       }
         .home{
           position: absolute;
@@ -319,7 +319,7 @@ body{
       .fa-bars{
         position: absolute;
         top: 4px;
-        right: -475px;
+        right: -553px;
       }
         .home{
           position: absolute;
@@ -344,4 +344,6 @@ body{
  #item2:hover,#item3:hover,#item4:hover,#item5:hover{
   transform:translateY(-10px) ;
  }
+
+
  
